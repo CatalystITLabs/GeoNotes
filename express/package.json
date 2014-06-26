@@ -1,0 +1,9 @@
+{
+  "name": "GeoNotes-BackEnd",
+  "description": "The backend of the GeoNotes application.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.4.4"
+  }
+}
