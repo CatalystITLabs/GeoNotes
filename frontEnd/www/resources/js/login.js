@@ -20,3 +20,35 @@ function loadReqs(){
 	loadScript("js/external/jquery-1.11.1.min.js");
 	loadScript("js/external/underscore-min.js");
 }
+
+//Login Model
+var login.authentication = Backbone.Model.extend({
+	defaults:{
+	UserName:"",
+	Password:"",
+	LoginFailed: false,
+	LoginSuccess: false
+}, 
+	url:"what ever it is"
+}),
+
+//View Interaction
+	var LoginView = Backbone.View.extend({
+	model: login.authentication(),
+	el:('#login-form'),
+	events:{	
+		"click #login": "login"
+	},
+	login: function(){
+		this.model.save({username: this.$el.find(#username),
+			password: this.$el.find(#password)},{
+			success: function(){
+			//empty
+			},
+			error: function(){
+			//empty
+			}
+		});
+	}
+});
+}
