@@ -2,6 +2,8 @@
  * Created by emerlock on 6/26/2014.
  */
 
+'use strict';
+
 module.exports = function (grunt) {
 
     // Project configuration.
@@ -24,11 +26,9 @@ module.exports = function (grunt) {
         },
         jshint: {
             // define the files to lint WAT
-            files: ['!gruntfile.js', 'express/node_modules/express/lib/authUtils.js',
+            files: ['express/node_modules/express/lib/authUtils.js',
                 'express/node_modules/express/lib/authentication.js',
-                'frontEnd/www/*.js',
-                '!frontEnd/www/js/external/*.js',
-                '!frontEnd/www/index.js'],
+                'frontEnd/www/**/*.js'],
             // configure JSHint (documented at http://www.jshint.com/docs/)
             options: {
                 jshintrc: '.jshintrc',

@@ -1,0 +1,5 @@
+gruntfile.js
+frontEnd/www/resources/js/external/backbone.js
+frontEnd/www/resources/js/external/jquery-1.11.1.min.js
+frontEnd/www/resources/js/external/underscore-min.js
+frontEnd/www/index.js
